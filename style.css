@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Medium.eot');
+    src: url('fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg'),
+         url('fonts/Montserrat-Medium.ttf') format('truetype'),
+         url('fonts/Montserrat-Medium.woff') format('woff'),
+         url('fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-SemiBold.eot');
+    src: url('fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg'),
+         url('fonts/Montserrat-SemiBold.ttf') format('truetype'),
+         url('fonts/Montserrat-SemiBold.woff') format('woff'),
+         url('fonts/Montserrat-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0) 100%), 
+               url(/img/bg.jpg)no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+body, button, input {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    color: #110F0E;
+}
+
+a {
+    text-decoration: none;
+}
+.mb-3 {
+    margin-bottom: 24px;
+}
+
+.mb-5 {
+    margin-bottom: 40px;
+}
+
+.mb-6 {
+    margin-bottom: 48px;
+}
+
+.h1 {
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+.h2 {
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+.h3 {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.field {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.field_input {
+    display: block;
+    height: 45px;
+    margin-top: 4px;
+    padding: 12px 16px;
+    min-width: 384px;
+    border: 1px solid #B9B9B9;
+}
+
+.field_input:focus{
+    outline: 0;
+    border: 1px solid #110F0E;
+}
+
+.field_input::placeholder {
+    color: #B9B9B9;
+}
+
+.wrap{
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0) 100%), 
+                url(img/bg.jpg) no-repeat center center;
+}
+
+.header_menu{
+    padding: 24px 0;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.header_menu-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_list{
+    list-style: none;
+}
+
+.nav_item{
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.nav_link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.header_title-wrap{
+    padding: 72px 0 40px;
+}
+
+.orders{
+    padding: 48px 0 40px;
+}
+
+.orders_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.orders_grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-card{
+    width: calc(25% - 18px);
+    height: 400px;
+    position: relative;
+    
+}
+.all_orders{
+    width: 345px;
+    height: 50px;
+    border: 2px solid #110F0E;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    left: 18%;
+}
+
+.order-card_bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order-card_content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 12px 24px 24px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.49) 100%);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.order-card_date {
+    align-self: flex-end;
+    background: #2B2B2B;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1.3;
+    margin-bottom: auto;
+}
+
+.order-card_category {
+    color: #D6D5D5;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+
+.btn {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 16px 40px;
+    border: 2px solid #110F0E;
+    transition: color .4s, background .4s;
+    background: none;
+    border-radius: 0;
+    cursor: pointer;
+    
+}
+
+.btn_cancel{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.btn_primary {
+    background: #110F0E;
+    color: #fff;
+}
+
+.btn_primary:hover {
+    background: none;
+    color: #110F0E;
+    transition: color .2s, background .2s;
+}
+
+.orders_btn {
+    margin: 0 auto;
+   
+}
+
+.footer{
+    background-color: #f0f0f0;
+    padding: 16px 0;
+}
+
+.footer_copyright{
+    font-size: 14px;
+    color: #868686;
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    list-style: none;
+}
+
+.social_item {
+    display: inline-block;
+}
+
+.social_link {
+    display: block;
+    padding: 8px 10px;
+}
+
+.social_icon {
+    fill: #4A4A4A;
+    opacity: .7;
+    transition: opacity 350ms; 
+}
+
+.social_link:hover .social_icon {
+    opacity: 1;
+    transition: opacity 175ms; 
+}
+
+.reg {
+    position: relative;
+}
+
+.reg_wrap {
+    padding: 80px 0;
+}
+
+.reg_img {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0) 100%), 
+                url(img/reg.jpg) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 50%;
+    top: 24px;
+    bottom: 24px;
+    right: 24px;
+}
+
+.auth {
+    position: relative;
+}
+
+.auth_wrap {
+    padding: 80px 0;
+}
+
+.auth_img {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0) 100%), 
+                url(img/auth.jpg) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 50%;
+    top: 24px;
+    bottom: 24px;
+    right: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+    .orders_grid {
+        flex-wrap: wrap;
+    }
+    .order-card {
+        width: calc(50% - 12px);
+        margin-bottom: 24px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .orders_title {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .order-card {
+        width: 100%;
+    }
+}
+
